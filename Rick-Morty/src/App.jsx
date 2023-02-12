@@ -21,6 +21,7 @@ const App = () => {
          <h2>id: {character.id}</h2>
          <h2>name: {character.name}</h2>
          <h2>status: {character.status}</h2>
+         <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg">image: {character.image}</img>
       </div>
       ))}
     </>
