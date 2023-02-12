@@ -1,30 +1,30 @@
 import React from "react";
-
-const charactersMock = [
-  {
-    id: 1,
-    name: "Rick Sanchez",
-    status: "Alive",
-  },
-  {
-    id: 2,
-    name: "Morty Smith",
-    status: "Alive",
-  },
-];
+import "./App.css";
 
 const App = () => {
-  const myState = React.useState(charactersMock);
-  
-const [characters, setCharacters] = useState(charactersMock);
+  const [characterList, setCharacterList] = React.useState([]);
 
+  React.useEffect(() => {
+    (async () => {
+      let data = await fetch(`https://rickandmortyapi.com/api/character/`).then(
+        (res) => res.json()
+      );
 
+      setCharacterList(data.results);
+    })();
+  }, []);
 
-  return 
-    <h1>
-       Hello React!
-    </h1>;
-  
+  return (
+    <>
+      {characterList.map((character) => (
+      <div key={character.id}>
+         <h2>id: {character.id}</h2>
+         <h2>name: {character.name}</h2>
+         <h2>status: {character.status}</h2>
+      </div>
+      ))}
+    </>
+  );
 };
 
 export default App;
