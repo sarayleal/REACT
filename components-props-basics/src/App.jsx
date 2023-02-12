@@ -1,14 +1,18 @@
 import './App.css'
-import Paragraph from './components/Paragraph'
-import SubTitle from './components/Subtitle'
-import Title from './components/title'
+import Title from "./components/Title";
+import Subtitle from "./components/Subtitle";
+import Paragraph  from "./components/Paragraph";
+import Image from "./components/Image";
+/* import {Title, Subtitle, Paragraph, Image} from "./components/index"; */
+
 
 export const App = () => {
     return (
       <>
         <Title/>
-        <SubTitle/>
+        <Subtitle/>
         <Paragraph/>
+        <Image/>
       </>
   )
 }

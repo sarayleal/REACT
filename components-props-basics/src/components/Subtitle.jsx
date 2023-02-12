@@ -1,6 +1,7 @@
 import React from "react";
+import './Subtitle.modules.css';
 
-const SubTitle = () => {
+const Subtitle = () => {
   return (
      <h1>
       Vamos a empezar a prepararnos en React.
@@ -8,4 +9,4 @@ const SubTitle = () => {
   );
 };
 
-export default SubTitle;
+export default Subtitle;
