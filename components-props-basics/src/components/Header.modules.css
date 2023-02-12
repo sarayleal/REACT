@@ -1,8 +1,7 @@
-.Image {
+.Header {
     font-size: 36px;
     text-align: center;
     color: #fef58d;
     display: flex;
     flex-direction: column;
-       }
-  
+}

@@ -3,9 +3,9 @@ import './Subtitle.modules.css';
 
 const Subtitle = () => {
   return (
-     <h1>
+     <h2>
       Vamos a empezar a prepararnos en React.
-     </h1>
+     </h2>
   );
 };
 
