@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import styles from "./App.modules.css";
 
 const App = () => {
   const [characterList, setCharacterList] = React.useState([]);
@@ -15,16 +15,18 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <div className={styles.container}>
       {characterList.map((character) => (
-      <div key={character.id}>
-         <h2>id: {character.id}</h2>
-         <h2>name: {character.name}</h2>
-         <h2>status: {character.status}</h2>
-         <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg">image: {character.image}</img>
-      </div>
+        character.status === "Alive" && (
+          <div key={character.id} className={styles.character}>
+            <h2 className={styles.name}>name: {character.name}</h2>
+            <img src={character.image} alt={character.name} className={styles.image} />
+            <p className={styles.status}>status: {character.status}</p>
+            <p className={styles.origin}>origin: {character.origin.name}</p>
+          </div>
+        )
       ))}
-    </>
+    </div>
   );
 };
 
