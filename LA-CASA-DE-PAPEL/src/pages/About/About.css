@@ -1,0 +1,52 @@
+.money-heist-page-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 50px 50px;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.aboutImg > img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.divAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.h1Name{
+    font-size: 50px;
+}
+
+.divP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media(max-width: 890px){
+    .divAbout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 12px 20px;
+    }
+
+    .aboutImg > img{
+        width: 90vw;
+        height: 300px;
+        object-fit: cover;
+    }
+  }

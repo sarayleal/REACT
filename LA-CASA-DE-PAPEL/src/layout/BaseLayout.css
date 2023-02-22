@@ -1,0 +1,9 @@
+.money-heist-baseLayout {
+    width: 100%;
+    display: grid;
+    height: 100vh;
+    grid-template-rows:
+      8vh 
+      1fr
+      5vh;
+  }

@@ -1,0 +1,69 @@
+.divAtracadores{
+    background-image: url("https://res.cloudinary.com/dqoiir5ii/image/upload/v1676807135/LA-CASA-DE-PAPEL/DBAFE8E8-5D89-4516-AD1F-922636BF5DEF_iotyqw.webp");
+     width: 300px;
+     height: 400px;
+     border-radius: 12px;
+     object-fit: cover;
+     display: flex;
+     justify-content: center;
+     border: solid #bf2925 5px;
+     transition: all 0.7s ease-in-out;
+ }
+ 
+ .divPolicias{
+     background-image: url("https://res.cloudinary.com/dqoiir5ii/image/upload/v1676743701/LA-CASA-DE-PAPEL/Su_3Frez_o7otap.webp");
+      width: 300px;
+      height: 400px;
+      border-radius: 12px;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      border: solid #bf2925 5px;
+      background-position: 72%;
+      background-size: 240%;
+      transition: all 0.7s ease-in-out;
+  
+  }
+ 
+  .divRehenes{
+     background-image: url("https://res.cloudinary.com/dqoiir5ii/image/upload/v1676807771/LA-CASA-DE-PAPEL/880x_rehenes-papel_rrvxte.jpg");
+      width: 300px;
+      height: 400px;
+      border-radius: 12px;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      border: solid #bf2925 5px;
+      background-position: 50%;
+      background-size: 200%;
+      transition: all 0.7s ease-in-out;
+  }
+ 
+ main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     gap: 3rem;
+     flex-wrap: wrap;
+     background-color: black;
+     color: white;
+     background-size: 100%;
+     background-repeat: no-repeat;
+ }
+ 
+ .gallery{
+     padding: 50px 0px;
+ }
+ 
+ .divAtracadores:hover{
+     scale: 1.2;
+ }
+ .divPolicias:hover{
+     scale: 1.2;
+ }
+ .divRehenes:hover{
+     scale: 1.2;
+ }
+ 
+ 
